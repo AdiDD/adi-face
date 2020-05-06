@@ -64,6 +64,7 @@ function App() {
   };
 
   const onPictureSubmit = () => {
+    setBox({});
     setImageUrl(input);
     fetch("https://cryptic-shore-30860.herokuapp.com/imageUrl", {
       method: "post",
